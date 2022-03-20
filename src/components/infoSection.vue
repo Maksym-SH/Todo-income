@@ -24,6 +24,7 @@
 <script>
 import todoAnimation from "./todoAnimation.vue";
 export default {
+  name: "infoSection",
   components: {
     todoAnimation,
   },
@@ -34,7 +35,8 @@ export default {
 .main-section {
   width: 100%;
   height: 100vh;
-  z-index: 2;
+  max-height: 1500px;
+  min-height: 600px;
   padding-top: 150px;
   border-radius: 2510px/200px;
   border-top-left-radius: 0px;
@@ -44,8 +46,7 @@ export default {
   animation: gradient 15s ease infinite;
   &__wrapper {
     h1 {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-family: $apple;
     }
     &__animation {
       display: block;

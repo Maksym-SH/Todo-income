@@ -4,15 +4,17 @@
     <main>
       <router-view></router-view>
     </main>
+    <Footer :page="this.$route.name"></Footer>
   </div>
 </template>
-
 <script>
 import Header from "./components/header";
+import Footer from "./components/footer.vue";
 export default {
   name: "App",
   components: {
     Header,
+    Footer,
   },
 };
 </script>
@@ -22,6 +24,26 @@ export default {
 #app {
   font-family: $nunito;
   color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+::-webkit-scrollbar-button {
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  background-color: $red;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
 }
 a {
   color: $white !important;

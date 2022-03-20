@@ -22,6 +22,10 @@ const routes = [
     path: "/todoList",
     name: "todoList",
   },
+  {
+    path: "*",
+    name: "notFound",
+  },
 ];
 const router = new VueRouter({
   mode: "history",

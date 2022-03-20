@@ -36,9 +36,10 @@ export default {
 @import "../assets/scss/variables.scss";
 .header {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   background-color: rgba($black, 0.8);
   &__logo {
     display: flex;

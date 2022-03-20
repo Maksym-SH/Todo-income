@@ -8,16 +8,20 @@ export default {
         path: "/",
       },
       {
-        name: "Про нас",
-        path: "/aboutUc",
-      },
-      {
         name: "Калькулятор",
         path: "/calculate",
       },
       {
-        path: "/todoList",
+        name: "Блокнот",
+        path: "/notebook",
+      },
+      {
         name: "Список завдань",
+        path: "/todoList",
+      },
+      {
+        name: "Про нас",
+        path: "/aboutUc",
       },
     ],
   },

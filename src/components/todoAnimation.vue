@@ -129,10 +129,8 @@
   .top {
     height: 19px;
     position: relative;
-
     transform: scale(1, 0);
     transform-origin: 0 0;
-
     animation-name: size;
     animation-duration: 4s;
     animation-timing-function: ease;
