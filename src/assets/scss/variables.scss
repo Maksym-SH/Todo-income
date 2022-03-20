@@ -1,8 +1,21 @@
+$oswald: "Oswald", sans-serif;
+$nunito: "Nunito Sans", sans-serif;
+@font-face {
+  font-family: $oswald;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
+  font-weight: 500;
+}
+@font-face {
+  font-family: $nunito;
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
+}
 $media-xs: 480px;
 $media-sm: 720px;
 $media-md: 980px;
 $media-lg: 1200px;
 $media-xl: 1440px;
-/* color */
+/* colors */
 $white: #ffffff;
 $green: #00832c;
+$black: #000000;
+/* fonts */
