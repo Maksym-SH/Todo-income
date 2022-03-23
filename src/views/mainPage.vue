@@ -22,6 +22,6 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/variables.scss";
 .main-page {
-  background-color: $light-grey;
+  background-color: $dark-grey;
 }
 </style>

@@ -29,14 +29,15 @@ export default {
   width: 100%;
   clip-path: polygon(
     50% 0%,
-    83% 12%,
-    100% 43%,
+    80% 10%,
+    100% 35%,
     100% 100%,
-    68% 100%,
-    32% 100%,
+    80% 90%,
+    50% 100%,
+    20% 90%,
     0 100%,
-    0% 43%,
-    17% 12%
+    0% 35%,
+    20% 10%
   );
   background: linear-gradient(-45deg, #f4ca16, #23a6d5, #cc397b);
   background-size: 400% 400%;

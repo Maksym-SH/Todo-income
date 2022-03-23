@@ -36,9 +36,10 @@ export default {
     justify-content: space-between;
     align-items: stretch;
     &__item {
-      width: 30%;
+      width: 50%;
       user-select: none;
       margin: 0 20px;
+      padding: 0 10px 10px 10px;
       background-color: $light-purple;
       text-align: center;
       color: $black;
@@ -62,7 +63,7 @@ export default {
       flex-direction: column;
       align-items: center;
       &__item {
-        width: 50%;
+        width: 100%;
         min-width: 280px;
         padding: 10px 20px;
         margin-bottom: 20px;

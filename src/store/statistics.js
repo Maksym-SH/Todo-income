@@ -9,10 +9,6 @@ export default {
         count: "10000+",
         description: `нотаток було оброблено`,
       },
-      {
-        count: "500+",
-        description: `розрахунків калькулятору`,
-      },
     ],
   },
   getters: {

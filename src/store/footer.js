@@ -1,10 +1,31 @@
 export default {
   state: {
-    textColor: "",
-    bgColor: "",
-    footerLogo: require("../assets/icon/logoBlack.svg"),
+    footerLogo: require("../assets/icon/logo.svg"),
+    contact: [
+      {
+        image: require("../assets/icon/instagram.svg"),
+        name: "Instagram",
+        link: "https://www.instagram.com/_mak.s0n/",
+        title: `Зв'язатися у Instagram`,
+      },
+      {
+        image: require("../assets/icon/facebook.svg"),
+        name: "Facebook",
+        link: "https://m.facebook.com/profile.php?lst=100031921784039%3A100031921784039%3A1647855977",
+        title: `Зв'язатися у Facebook`,
+      },
+      {
+        image: require("../assets/icon/github.svg"),
+        name: "GitHub",
+        link: "https://m.facebook.com/profile.php?lst=100031921784039%3A100031921784039%3A1647855977",
+        title: `Переглянути проект у GitHub`,
+      },
+    ],
   },
   getters: {
+    contact(state) {
+      return state.contact;
+    },
     textColor(state) {
       return state.textColor;
     },
@@ -13,18 +34,6 @@ export default {
     },
     footerLogo(state) {
       return state.footerLogo;
-    },
-  },
-  mutations: {
-    CHANGE_PARAMS(state, payload) {
-      state.bgColor = payload[0];
-      state.textColor = payload[1];
-      console.log(state.textColor, state.bgColor);
-    },
-  },
-  actions: {
-    callCheckParams({ commit }, payload) {
-      commit("CHANGE_PARAMS", payload);
     },
   },
 };

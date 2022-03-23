@@ -4,6 +4,7 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 import mainPage from "@/views/mainPage.vue";
+import notebookPage from "@/views/notebookPage";
 const routes = [
   {
     path: "/",
@@ -11,12 +12,13 @@ const routes = [
     component: mainPage,
   },
   {
-    path: "/aboutUs",
-    name: "aboutUs",
+    path: "/notebook",
+    name: "notebook",
+    component: notebookPage,
   },
   {
-    path: "/calculate",
-    name: "calculate",
+    path: "/aboutUs",
+    name: "aboutUs",
   },
   {
     path: "/todoList",

@@ -4,7 +4,7 @@
     <main>
       <router-view></router-view>
     </main>
-    <Footer :page="this.$route.name"></Footer>
+    <Footer></Footer>
   </div>
 </template>
 <script>
@@ -24,6 +24,7 @@ export default {
 #app {
   font-family: $nunito;
   color: $white;
+  background-color: $dark-grey;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -39,7 +40,7 @@ export default {
 }
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
-  background-color: $red;
+  background-color: $green;
 }
 
 ::-webkit-scrollbar {

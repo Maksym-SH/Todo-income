@@ -1,0 +1,77 @@
+@import "./variables.scss";
+.notebook-section {
+  background: linear-gradient(#4dadf9, $dark-grey);
+  width: 100%;
+
+  min-height: 715px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 120px;
+  &__square-animation {
+    position: absolute;
+    bottom: -120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    width: 100%;
+    justify-content: space-around;
+    span {
+      pointer-events: none;
+      height: 60px;
+      width: 60px;
+      background: rgba(68, 0, 255, 0.1);
+      animation: move 10s linear infinite;
+      position: relative;
+      overflow: hidden;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 60px;
+        width: 40%;
+        transform: skew(45deg) translateX(150px);
+        background: rgba(255, 255, 255, 0.15);
+        animation: mirror 3s linear infinite;
+      }
+      &:first-child {
+        animation-delay: 2.2s;
+        transform: scale(2.15);
+      }
+      &:nth-child(2) {
+        animation-delay: 3.5s;
+        transform: scale(1.55);
+      }
+      &:nth-child(3) {
+        animation-delay: 0.2s;
+        transform: scale(0.35);
+      }
+      &:nth-child(4) {
+        animation-delay: 6s;
+        transform: scale(2.15);
+      }
+      &:nth-child(5) {
+        animation-delay: 7s;
+        transform: scale(0.5);
+      }
+      &:nth-child(6) {
+        animation-delay: 4s;
+        transform: scale(2.5);
+      }
+      &:nth-child(7) {
+        animation-delay: 3;
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+@keyframes move {
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+@keyframes mirror {
+  100% {
+    transform: translateX(-450px);
+  }
+}

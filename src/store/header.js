@@ -8,10 +8,6 @@ export default {
         path: "/",
       },
       {
-        name: "Калькулятор",
-        path: "/calculate",
-      },
-      {
         name: "Блокнот",
         path: "/notebook",
       },

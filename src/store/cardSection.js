@@ -11,11 +11,6 @@ export default {
         path: require("../assets/img/task.svg"),
         description: "Запис задач а також їх відстежування у ході виконання",
       },
-      {
-        name: "Калькулятор",
-        path: require("../assets/img/calculator.svg"),
-        description: "Рахуйте прямо тут",
-      },
     ],
   },
   getters: {

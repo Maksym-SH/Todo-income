@@ -67,6 +67,7 @@ export default {
     }
     @media (max-width: $media-md) {
       display: block;
+      margin-top: 20px;
       &__item {
         margin-bottom: 20px;
       }
