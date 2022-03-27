@@ -15,10 +15,6 @@ export default {
         name: "Список завдань",
         path: "/todoList",
       },
-      {
-        name: "Про нас",
-        path: "/aboutUc",
-      },
     ],
   },
   getters: {

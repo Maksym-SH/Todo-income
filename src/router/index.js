@@ -18,10 +18,6 @@ const routes = [
     component: notebookPage,
   },
   {
-    path: "/aboutUs",
-    name: "aboutUs",
-  },
-  {
     path: "/todoList",
     name: "todoList",
     component: todoPage,
