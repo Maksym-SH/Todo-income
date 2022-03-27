@@ -6,6 +6,7 @@ Vue.use(VueRouter);
 import mainPage from "@/views/mainPage.vue";
 import notebookPage from "@/views/notebookPage";
 import todoPage from "@/views/todoPage";
+import notFoundPage from "@/views/notFoundPage";
 const routes = [
   {
     path: "/",
@@ -25,6 +26,7 @@ const routes = [
   {
     path: "*",
     name: "notFound",
+    component: notFoundPage,
   },
 ];
 const router = new VueRouter({
