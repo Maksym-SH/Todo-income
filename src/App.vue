@@ -9,7 +9,7 @@
 </template>
 <script>
 import Header from "./components/header";
-import Footer from "./components/footer.vue";
+import Footer from "./components/footer";
 export default {
   name: "App",
   components: {

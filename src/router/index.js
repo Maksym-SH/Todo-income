@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 
 import mainPage from "@/views/mainPage.vue";
 import notebookPage from "@/views/notebookPage";
+import todoPage from "@/views/todoPage";
 const routes = [
   {
     path: "/",
@@ -23,6 +24,7 @@ const routes = [
   {
     path: "/todoList",
     name: "todoList",
+    component: todoPage,
   },
   {
     path: "*",

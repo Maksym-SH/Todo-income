@@ -5,6 +5,7 @@ import card from "./cardSection.js";
 import statistics from "./statistics.js";
 import footer from "./footer.js";
 import notebook from "./notebook.js";
+import todo from "./todoSection.js";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -14,5 +15,6 @@ export default new Vuex.Store({
     statistics,
     footer,
     notebook,
+    todo,
   },
 });

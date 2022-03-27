@@ -1,16 +1,4 @@
-$oswald: "Oswald", sans-serif;
-$nunito: "Nunito Sans", sans-serif;
-@font-face {
-  font-family: $oswald;
-  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
-  font-weight: 500;
-}
-@font-face {
-  font-family: $nunito;
-  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
-}
-$apple: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-  Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+/* media */
 $media-xs: 480px;
 $media-sm: 720px;
 $media-md: 980px;
@@ -27,4 +15,20 @@ $orange: #ffbb24;
 $red: #ff4a4a;
 $dark-grey: #576a74;
 $light-black: #0f0f0f;
+$purple: #6f00ff;
+$blue: #4400ff;
+$dark-orange: #ba872c;
 /* fonts */
+$oswald: "Oswald", sans-serif;
+$nunito: "Nunito Sans", sans-serif;
+@font-face {
+  font-family: $oswald;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
+  font-weight: 500;
+}
+@font-face {
+  font-family: $nunito;
+  src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
+}
+$apple: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+  Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
