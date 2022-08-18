@@ -7,7 +7,7 @@
           <p>{{ logoName }}</p>
         </div>
         <div class="footer__wrapper__contact-us">
-          <h4>Зв`язатися з нами</h4>
+          <h4>Связаться с нами</h4>
           <div class="footer__wrapper__contact-us_icon">
             <a
               v-for="(item, index) in contact"
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    <div class="footer__end-line">&copy; Усі права захищені</div>
+    <div class="footer__end-line">&copy; Все права защищены</div>
   </footer>
 </template>
 <script>

@@ -3,17 +3,16 @@
     <div class="container-lg">
       <div class="main-section__wrapper">
         <h1>
-          Для нотатків та відстежування
-          <br />
-          своїх задач
+          Для заметок и отслеживания
+          своих заданий
         </h1>
         <div class="main-section__wrapper__animation">
           <todoAnimation />
         </div>
         <div class="main-section__wrapper__info">
           <h5>
-            Підвищення ефетивності для виконання задач та нотатник для запису
-            важливих деталей
+            Повышение ефективности работы при помощи контроля своих заданий и
+            созданных заметок
             <b-icon icon="star-fill" animation="fade" font-scale="1"></b-icon>
           </h5>
         </div>
@@ -47,6 +46,7 @@ export default {
   &__wrapper {
     h1 {
       font-family: $apple;
+      max-width: 50%;
     }
     &__animation {
       display: block;
@@ -62,6 +62,7 @@ export default {
       @media (max-width: $media-md) {
         h5 {
           font-size: 19px;
+          max-width: 100%;
         }
       }
     }

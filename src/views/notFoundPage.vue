@@ -1,9 +1,9 @@
 <template>
   <section class="not-found-page">
     <div class="container">
-      <h1 class="not-found-page__info">Сторінка не знайдена</h1>
+      <h1 class="not-found-page__info">Страница не найдена</h1>
       <div class="not-found-page__come-back">
-        <h4>Перейти до головної сторінки:</h4>
+        <h4>Перейти на главную страницу:</h4>
         <router-link to="/">
           <b-button variant="success">
             <b-icon icon="files" scale="1" variant="light"></b-icon>

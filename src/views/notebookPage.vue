@@ -6,15 +6,15 @@
     <h1 align="center">Ваш блокнот</h1>
     <div class="container-lg">
       <div class="notebook-section__info">
-        <p>Як цим користуватися?</p>
+        <p>Как этим пользоваться?</p>
         <ul class="notebook-section__info__list">
-          <li>Спочатку треба створити нотатку, написавши її</li>
+          <li>Сначала нужно создать заметку, написав ее</li>
           <li>
-            Натиснення на кнопку "
+            Нажатие на кнопку "
             <b-icon icon="check2" scale="1" variant="light"></b-icon>
-            " зберігає вашу нотатку.
+            " сохраняет вашу заметку.
           </li>
-          <li>Їх можна переглянути у будь-який момент</li>
+          <li>Заметки можно пересмотреть в любое время.</li>
         </ul>
       </div>
     </div>
@@ -29,7 +29,7 @@
               class="note-section__note__title"
               :class="[darkTheme ? 'dark-class' : 'light-class']"
             >
-              <h5>Назва:</h5>
+              <h5>Название:</h5>
               <input
                 type="text"
                 maxlength="25"
@@ -70,7 +70,7 @@
         </div>
         <div class="container">
           <div class="note-section__save-note" v-if="saveNotes.length">
-            <h4>Ваші збережені нотатки</h4>
+            <h4>Ваши сохраненные заметки</h4>
             <div
               class="note-section__save-note__wrapper"
               :class="[darkTheme ? 'dark-class' : 'light-class']"

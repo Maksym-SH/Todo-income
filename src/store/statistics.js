@@ -3,11 +3,11 @@ export default {
     statistics: [
       {
         count: "1000+",
-        description: `завдань було створено`,
+        description: `заданий было создано`,
       },
       {
         count: "10000+",
-        description: `нотаток було оброблено`,
+        description: `заметок было обработано`,
       },
     ],
   },

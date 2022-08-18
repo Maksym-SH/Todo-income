@@ -1,31 +1,31 @@
 <template>
   <section class="todo-section">
     <div class="container">
-      <h2 align="center">Ваш список завдань</h2>
+      <h2 align="center">Ваш список заданий</h2>
       <div class="todo-section__info-list">
-        <p>Як цим користуватися?</p>
+        <p>Как этим пользоваться?</p>
         <ul>
           <li>
-            Для створення завдання потрібно його написати у спеціальному місці
-            для вводу
+            Для создания заданий нужно нажать кнопку создания задачи и написать нужную информацию
           </li>
-          <li>Пересувайте завдання у категорії виконання</li>
+          <li>Передвигайте карточки на разные стадии выполнения</li>
         </ul>
       </div>
       <b-button v-b-modal.modal-center class="button-create-task">
-        Створення завдання
+        Создание задачи
       </b-button>
       <b-modal id="modal-center"
         @cancel="callChangeClear"
         @ok="callCreateTask"
-        centered title="Створення завдання" >
+        hide-header-close
+        centered title="Создание задачи" >
         <p class="my-4">
-          <label for="name">Назва завдання</label>
-          <input name="name" autocomplete="off" class="popap-input" type="text" @input="callChangeTaskName($event.target.value)" />
-          <label for="name" class="d-block">Додати підзадачі</label>
+          <label for="name">Название задачи</label>
+          <input name="name" autocomplete="off" class="popup-input" type="text" @input="callChangeTaskName($event.target.value)" />
+          <label for="name" class="d-block">Добавить подзадачи</label>
           <input
             name="name"
-            class="popap-input w-50 p-1"
+            class="popup-input w-50 p-1"
             type="text"
             @input="callSubItem($event.target.value)"
             ref="inputSubTask"
@@ -39,7 +39,7 @@
             @click="callChangeSubTask"
             @keyup.enter="callChangeSubTask()"
           >
-            Додати підзадачу
+            Добавить подзадание
           </b-button>
           <ul>
             <li v-for="(item,index) in subtasks"  :key="index">{{item.name}}</li>
@@ -48,7 +48,7 @@
       </b-modal>
       <div class="todo-section__wrapper">
         <div class="todo-section__wrapper__window">
-          <h3>Зробити</h3>
+          <h3>Сделать</h3>
           <div class="todo-section__wrapper__todo-list">
             <transition-group name="task">
             <div
@@ -58,7 +58,7 @@
               <b-button variant="success" class="button-right" @click="callChangeProgress(['todo', 'inProgress', index])"><img src="../assets/icon/arrow-right.svg" alt=""></b-button>
               <p>{{item.title ? item.title : 'Без назви'}}</p>
               <div v-if="item.subTitle !== 'empty'">
-                <h6>Додаткові завдання</h6>
+                <h6>Подзадачи</h6>
                 <ul>
                   <li v-for="(list, indexList) in item.subTitle" :key="indexList">
                     {{list.name}}
@@ -70,17 +70,20 @@
           </div>
         </div>
         <div class="todo-section__wrapper__window">
-          <h3>У процесі</h3>
+          <h3>В процессе</h3>
          <div class="todo-section__wrapper__todo-list">
             <transition-group name="task">
             <div
               class="todo-section__wrapper__todo-list__item"
               v-for="(item,index) in inProgress" :key="index"
             >
-              <b-button variant="success" class="button-right" @click="callChangeProgress(['inProgress', 'done', index])"><img src="../assets/icon/arrow-right.svg" alt=""></b-button>
+              <b-button variant="success" class="button-right"
+              @click="callChangeProgress(['inProgress', 'done', index])">
+
+              <img src="../assets/icon/arrow-right.svg" alt=""></b-button>
               <p>{{item.title ? item.title : 'Без назви'}}</p>
               <div v-if="item.subTitle !== 'empty'">
-                <h6>Додаткові завдання</h6>
+                <h6>Подзадачи</h6>
                 <ul>
                   <li v-for="(list, indexList) in item.subTitle" :key="indexList"
                   :class="{ 'line-through': list.done }">
@@ -96,19 +99,20 @@
           </div>
         </div>
         <div class="todo-section__wrapper__window">
-          <h3>Завершено</h3>
+          <h3>Завершены</h3>
         <div class="todo-section__wrapper__todo-list">
             <transition-group name="task">
             <div
               class="todo-section__wrapper__todo-list__item"
               v-for="(item,index) in done" :key="index"
             >
-              <b-button class="button-left" variant="danger" @click="callChangeProgress(['done', 'delete', index])">
+              <b-button class="button-left" variant="danger"
+              @click="callChangeProgress(['done', 'delete', index])">
                 <b-icon  icon="x-circle" scale="1" variant="light"></b-icon>
               </b-button>
               <p>{{item.title ? item.title : 'Без назви'}}</p>
               <div v-if="item.subTitle !== 'empty'">
-                <h6>Додаткові завдання</h6>
+                <h6>Подзадачи</h6>
                 <ul>
                   <li v-for="(list, indexList) in item.subTitle" :key="indexList"
                   class="line-through">
@@ -299,7 +303,7 @@ export default {
     }
   }
 }
-.popap-input {
+.popup-input {
   display: block;
   border: 1px solid $green;
   border-radius: 10px;

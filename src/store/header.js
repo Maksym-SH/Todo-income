@@ -4,7 +4,7 @@ export default {
     logoPath: require("@/assets/icon/logo.svg"),
     navLinks: [
       {
-        name: "Головна",
+        name: "Главная",
         path: "/",
       },
       {
@@ -12,7 +12,7 @@ export default {
         path: "/notebook",
       },
       {
-        name: "Список завдань",
+        name: "Список заданий",
         path: "/todoList",
       },
     ],
